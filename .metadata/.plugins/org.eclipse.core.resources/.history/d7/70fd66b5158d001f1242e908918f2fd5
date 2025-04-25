@@ -1,0 +1,22 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 18, 2024
+ *      Author: xintxiao
+ */
+#include "motor.h"
+void motor_init()
+{
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+}
+
+void left_run()
+{
+	HAL_GPIO_WritePin(GPIOA, AIN1_Pin, GPIO_PIN_RESET);
+
+
+
+
+
+}

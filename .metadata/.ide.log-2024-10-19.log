@@ -1,0 +1,53 @@
+2024-10-20 00:27:53,212 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 756279352 Bytes (1073741824)
+2024-10-20 00:27:55,794 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 818216752 Bytes (1073741824)
+2024-10-20 00:27:56,028 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 863305520 Bytes (1073741824)
+2024-10-20 00:27:56,365 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-10-20 00:27:56,365 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-10-20 00:27:56,365 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-10-20 00:27:56,365 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-10-20 00:27:56,365 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-10-20 00:27:56,366 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-10-20 00:27:56,366 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-10-20 00:27:56,366 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-10-20 00:27:56,366 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-10-20 00:27:56,367 [INFO] CodeGenerator:807 - code generatio: config db path: D:\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-10-20 00:27:56,373 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-10-20 00:27:56,373 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-10-20 00:27:56,545 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\MXTmpFiles\license.tmp_save
+2024-10-20 00:27:56,822 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\MXTmpFiles\license.tmp
+2024-10-20 00:27:56,906 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\gpio.c_save
+2024-10-20 00:27:57,034 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\gpio.c
+2024-10-20 00:27:57,048 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\gpio.h_save
+2024-10-20 00:27:57,128 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\gpio.h
+2024-10-20 00:27:57,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\adc.c_save
+2024-10-20 00:27:57,514 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\adc.c
+2024-10-20 00:27:57,529 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\adc.h_save
+2024-10-20 00:27:57,603 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\adc.h
+2024-10-20 00:27:57,624 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\i2c.c_save
+2024-10-20 00:27:57,704 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\i2c.c
+2024-10-20 00:27:57,720 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\i2c.h_save
+2024-10-20 00:27:57,791 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\i2c.h
+2024-10-20 00:27:57,810 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\tim.c_save
+2024-10-20 00:27:57,898 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\tim.c
+2024-10-20 00:27:57,911 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\tim.h_save
+2024-10-20 00:27:57,967 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\tim.h
+2024-10-20 00:27:57,991 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\stm32f1xx_it.c_save
+2024-10-20 00:27:58,053 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\stm32f1xx_it.c
+2024-10-20 00:27:58,064 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\stm32f1xx_it.h_save
+2024-10-20 00:27:58,113 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\stm32f1xx_it.h
+2024-10-20 00:27:58,131 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-20 00:27:58,195 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\stm32f1xx_hal_msp.c
+2024-10-20 00:27:58,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\MXTmpFiles\system.tmp_save
+2024-10-20 00:27:58,243 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\MXTmpFiles\system.tmp
+2024-10-20 00:27:58,258 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-20 00:27:58,308 [INFO] CodeEngine:335 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-20 00:27:58,336 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\main.h_save
+2024-10-20 00:27:58,394 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Inc\main.h
+2024-10-20 00:27:58,404 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\main.c_save
+2024-10-20 00:27:58,484 [INFO] CodeEngine:279 - Generated code: C:\Users\xintxiao\Desktop\xinjian\car\Core\Src\main.c
+2024-10-20 00:27:58,860 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 250mS.
+2024-10-20 00:27:58,867 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-10-20 00:27:58,915 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-10-20 00:27:58,924 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-10-20 00:27:58,926 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-10-20 00:27:58,930 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE

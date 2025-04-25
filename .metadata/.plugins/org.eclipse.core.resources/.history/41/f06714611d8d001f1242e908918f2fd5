@@ -1,0 +1,36 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 18, 2024
+ *      Author: xintxiao
+ */
+#include "motor.h"
+#include "tim.h"
+#include "stm32f1xx_hal_tim.h"
+
+void motor_init()
+{
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+}
+
+void car_run()
+{
+	HAL_GPIO_WritePin(GPIOA, AIN1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOA, AIN2_Pin, GPIO_PIN_RESET);
+	__HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,200);
+	__HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_4,200);
+
+}
+
+void car_stop()
+{
+	HAL_GPIO_WritePin(GPIOA, AIN1_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOA, AIN2_Pin, GPIO_PIN_RESET);
+		__HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,0);
+		__HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_4,0);
+        HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_1);
+        HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_1);
+
+}
+

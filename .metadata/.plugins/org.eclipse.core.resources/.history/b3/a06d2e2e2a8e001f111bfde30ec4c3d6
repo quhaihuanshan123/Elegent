@@ -1,0 +1,118 @@
+/*
+ * motor.c
+ *
+ *  Created on: Oct 18, 2024
+ *      Author: xintxiao
+ */
+#include "motor.h"
+#include "tim.h"
+#include "stm32f1xx_hal_tim.h"
+#define NUM 6
+int motorstatus=0;
+extern float lh;
+extern float rh;
+extern float mh;
+extern float rf;
+extern float lf;
+extern float ADC[NUM];
+extern float Error;
+
+void motor_init()
+{
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+}
+
+void car_run()
+{
+
+
+	//if(Error>50)
+		//{
+		//if(Error>250)
+		//	Error=250;
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,200);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,200+Error);//目测右轮
+		//}
+	//if(Error<-50)
+		//	{
+		//if(Error<-250)
+
+		//		Error=-250;
+		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,200-Error);
+		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,200);
+			//}
+
+}
+
+void car_stop()
+{
+
+		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,0);
+        HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_1);
+        HAL_TIM_PWM_Stop(&htim1,TIM_CHANNEL_4);
+
+}
+void car_up()
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,400);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,400);
+}
+void car_round()
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,200);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,400);
+	HAL_Delay(500);
+}
+/*void car_cross()
+{
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,200);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,300);
+		HAL_Delay(500);
+
+}
+/*void statusjudge()
+{
+if(ADC_ONE[5]>&&ADC_ONE[4]>)//坡道 竖电感和横电感
+	motorstatus=1;
+if(ADC_ONE[3]>&&ADC_ONE[4]>)//环岛 内八电感和横电感
+	motorstatus=2;
+	if(ADC_ONE[1]>&&ADC_ONE[2]<&&ADC[4]<)
+	motorstatus=3;
+if(ADC_ONE[4]<&&ADC_ONE[0]<&&ADC_ONE[3]<)//停车
+	motorstatus=4;
+
+}*/
+
+
+
+void car_control()
+{
+	    HAL_GPIO_WritePin(GPIOA, AIN1_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOA, AIN2_Pin, GPIO_PIN_RESET);
+
+switch (motorstatus)
+{
+case 0:
+	car_run();
+	break;
+/*case 1:
+car_up();
+break;
+case 2:
+	car_round();
+	break;
+case 3:
+	car_cross();
+	break;
+case 4:
+	car_stop();
+	break;*/
+
+
+}
+
+
+
+}

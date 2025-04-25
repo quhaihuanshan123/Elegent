@@ -1,0 +1,6 @@
+../Core/Src/motor.c:20:6:motor_init	1
+../Core/Src/motor.c:27:6:car_run	5
+../Core/Src/motor.c:56:6:car_stop	1
+../Core/Src/motor.c:65:6:car_up	1
+../Core/Src/motor.c:70:6:car_round	1
+../Core/Src/motor.c:98:6:car_control	2
